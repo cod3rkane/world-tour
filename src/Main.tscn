@@ -3,12 +3,14 @@
 [ext_resource path="res://src/Main.gd" type="Script" id=1]
 [ext_resource path="res://src/Board.tscn" type="PackedScene" id=2]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" index="0"]
 
 position = Vector2( 13.8701, 0.481537 )
 script = ExtResource( 1 )
 
 [node name="Board" parent="." index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 1.90735e-006, -1.49012e-007 )
 
 [node name="Camera2D" type="Camera2D" parent="." index="1"]
 

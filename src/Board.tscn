@@ -3,7 +3,7 @@
 [ext_resource path="res://src/floor_tileset.tres" type="TileSet" id=1]
 [ext_resource path="res://src/TileMap.gd" type="Script" id=2]
 
-[node name="Board" type="Node2D" index="0"]
+[node name="Board" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 

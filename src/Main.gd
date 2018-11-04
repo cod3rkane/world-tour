@@ -12,9 +12,11 @@ func _ready():
 	start_game()
 
 func start_game():
-	var player1 = Player.instance()
-	player1.set_position($Board/TileMap.get_world_pos($Board/TileMap.get_start_tile_pos()))
-	$Board/TileMap.add_child(player1)
+  var player1 = Player.instance()
+  var startTile = $Board/TileMap.get_start_tile_pos()
+  var worldPos = $Board/TileMap.get_world_pos($Board/TileMap.get_next_pos(startTile, 4))
+  player1.set_position(worldPos)
+  $Board/TileMap.add_child(player1)
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
