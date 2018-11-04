@@ -14,7 +14,7 @@ func _ready():
 func start_game():
   var player1 = Player.instance()
   var startTile = $Board/TileMap.get_start_tile_pos()
-  var worldPos = $Board/TileMap.get_world_pos($Board/TileMap.get_next_pos(startTile, 4))
+  var worldPos = $Board/TileMap.get_world_pos($Board/TileMap.move_to(startTile, 36))
   player1.set_position(worldPos)
   $Board/TileMap.add_child(player1)
 

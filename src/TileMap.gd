@@ -49,8 +49,14 @@ func get_start_tile_pos():
 
 func get_world_pos(pos = Vector2()):
   return map_to_world(pos)
+
+func move_to(pos = Vector2(), to = int()):
+  var res = pos
+  for i in range(to):
+    res = _get_next_pos(res, 1)
+  return res
   
-func get_next_pos(pos = Vector2(), to = int()):
+func _get_next_pos(pos = Vector2(), to = int()):
   if is_corner(pos):
     if pos == TOP_LEFT_CORNER:
       return decrease_y_vec2(pos, to)
