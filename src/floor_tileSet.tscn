@@ -1,0 +1,93 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/World-tour.png" type="Texture" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Base" type="Sprite" parent="." index="0"]
+
+position = Vector2( 138.947, 88.4211 )
+texture = ExtResource( 1 )
+offset = Vector2( -66, -42 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 132, 84 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Base" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Base/StaticBody2D" index="0"]
+
+position = Vector2( -3, -4 )
+build_mode = 0
+polygon = PoolVector2Array( -65.3118, -14.0894, 0.0122375, -46.5198, -63.9219, -80.34, -126.466, -47.9097 )
+
+[node name="Base2" type="Sprite" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 286.297, 91.9128 )
+texture = ExtResource( 1 )
+offset = Vector2( -66, -42 )
+region_enabled = true
+region_rect = Rect2( 132, 0, 132, 84 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Base2" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Base2/StaticBody2D" index="0"]
+
+position = Vector2( -2, -5 )
+build_mode = 0
+polygon = PoolVector2Array( -65.3118, -14.0894, 0.0122375, -46.5198, -63.9219, -80.34, -126.466, -47.9097 )
+
+[node name="StartBase" type="Sprite" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 450.647, 97.6128 )
+texture = ExtResource( 1 )
+offset = Vector2( -66, -42 )
+region_enabled = true
+region_rect = Rect2( 264, 0, 132, 84 )
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StartBase" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StartBase/StaticBody2D" index="0"]
+
+position = Vector2( -2, -4 )
+build_mode = 0
+polygon = PoolVector2Array( -65.3118, -14.0894, 0.0122375, -46.5198, -63.9219, -80.34, -126.466, -47.9097 )
+
+
